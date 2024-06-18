@@ -1,4 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+
 import Logo from "../assets/logo.png";
 import GoogleBtn from "../assets/google-btn-icon.png";
 import ArrowRight from "../assets/arrow-right.svg";
@@ -11,48 +15,117 @@ import LeftHeader from "../assets/header-imgs-left.png";
 import RightHeader from "../assets/header-imgs-right.png";
 import HeaderSphere from "../assets/header-sphere.png";
 
+import HamburgerIcon from "../assets/hamburgher-icon.svg";
+
 import Background from "../assets/bg.png";
 
 // TODO: Add gradients to the header
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header
       style={{ backgroundImage: `url(${Background})` }}
-      className="relative h-[938px] pt-[40px] text-gray-700"
+      className="relative h-[938px] pt-[12px] text-gray-700 md:pt-[40px]"
     >
-      <div className="container mx-[124px] flex flex-col flex-wrap items-center justify-between p-0 md:flex-row">
-        <a className="" href="https://www.vixc.com/" target="_blank">
-          <img src={Logo} alt="Logo" />
+      {/* navbar */}
+      <div className="container flex flex-wrap items-center justify-between p-0 px-5 md:mx-10 md:flex-row 2xl:mx-[124px]">
+        <a
+          className=""
+          href="https://www.vixc.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="w-[70px] md:w-auto" src={Logo} alt="Logo" />
         </a>
 
-        <nav className="flex justify-between gap-[42px] font-darker-grotesque text-xl font-semibold leading-7">
-          <a className="hover:text-gray-900">Features</a>
-          <a className="hover:text-gray-900">How to use</a>
-          <a className="hover:text-gray-900">Plans</a>
-          <a className="hover:text-gray-900">Chatbot</a>
-          <a className="hover:text-gray-900">FAQ</a>
+        {/* Desktop Navigation */}
+        <nav className="hidden justify-between gap-[42px] font-darker-grotesque text-xl font-semibold leading-7 md:flex">
+          <a className="hover:text-gray-900" href="#">
+            Features
+          </a>
+          <a className="hover:text-gray-900" href="#">
+            How to use
+          </a>
+          <a className="hover:text-gray-900" href="#">
+            Plans
+          </a>
+          <a className="hover:text-gray-900" href="#">
+            Chatbot
+          </a>
+          <a className="hover:text-gray-900" href="#">
+            FAQ
+          </a>
         </nav>
 
-        <div className="mr-[88px] flex w-[158px] max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-          <button className="flex flex-1 items-center justify-between rounded-lg bg-white px-5 py-[7px] text-left font-darker-grotesque text-lg font-bold leading-[1.5] text-[rgb(3,6,16)]">
+        {/* Mobile Hamburger Icon */}
+        <div className="md:hidden" onClick={toggleMenu}>
+          {isOpen ? (
+            <FaTimes className="text-2xl" />
+          ) : (
+            <img
+              className="ml-[36px] h-[20px] w-[23px] cursor-pointer"
+              src={HamburgerIcon}
+              alt=""
+            />
+          )}
+        </div>
+
+        {/* Mobile Navigation with Backdrop */}
+        {isOpen && (
+          <div className="fixed left-0 top-0 z-40 flex h-full w-full items-center justify-center bg-black bg-opacity-50 md:hidden">
+            <nav className="flex h-full w-full flex-col items-center gap-[42px] bg-white p-8 font-darker-grotesque text-xl font-semibold leading-7">
+              <button className="mb-8 self-end" onClick={toggleMenu}>
+                <FaTimes className="text-2xl" />
+              </button>
+              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+                Features
+              </a>
+              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+                How to use
+              </a>
+              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+                Plans
+              </a>
+              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+                Chatbot
+              </a>
+              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+                FAQ
+              </a>
+            </nav>
+          </div>
+        )}
+
+        <div className="flex h-[33px] w-[109px] max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg md:mr-[88px] md:h-[43px] md:w-[158px]">
+          <button className="flex flex-1 items-center justify-center rounded-lg bg-white text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:justify-between md:px-5 md:py-[7px] md:text-lg">
             Start free trial
-            <img src={ArrowRight} alt="" />
+            <img src={ArrowRight} alt="Start free trial" />
           </button>
         </div>
       </div>
       {/* HERO */}
-      <div className="mx-[318px] mt-[70px] flex flex-col items-center justify-start p-0">
+      <div className="flex flex-col items-center justify-start p-5 md:mx-[318px] md:mt-[70px] md:p-0">
+        <img
+          className="-mt-1 md:hidden"
+          src={CenterHeader}
+          alt="Scrapbook with travel photos"
+        />
         {/* eyebrow */}
-        <div className="flex items-center justify-center gap-2">
+        <div className="mt-[18px] flex items-center justify-center gap-2">
           <img src={UnionL} alt="" />
-          <h5 className="text-center font-darker-grotesque text-lg font-bold leading-[1.5] text-[#030610]">
+          <h5 className="text-center font-darker-grotesque text-[10px] font-bold leading-[1.5] text-[#030610] md:mt-0 md:text-lg">
             TOP AI PLATFORM
           </h5>
           <img src={UnionR} alt="" />
         </div>
         {/* text */}
-        <h1 className="font-space-grotesk relative text-center text-[70px] font-semibold leading-[110%]">
+        <h1 className="font-space-grotesk relative pt-[2px] text-center text-[40px] font-semibold leading-[110%] md:pt-0 md:text-[52px] 2xl:text-[70px]">
           <span className="bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text text-transparent">
             Transform
           </span>{" "}
@@ -74,20 +147,20 @@ const Header = () => {
             </svg>
           </span>
         </h1>
-        <p className="mt-[26px] px-[82.5px] text-center font-darker-grotesque text-lg leading-[1.5] text-[#081A56]">
+        <p className="mt-[14px] text-center font-darker-grotesque text-[15px] leading-[1.5] text-[#081A56] md:mt-[26px] md:px-[82.5px] md:text-lg">
           Meet VIXC, the ultimate photo search solution. With its intuitive web
           portal and mobile app, finding memories is as easy as saying, "Show me
           San Francisco lake photos." VIXC makes browsing effortless,
           transforming photo search into a delightful experience.
         </p>
         {/* buttons */}
-        <div className="relative flex items-start justify-start gap-[18px] py-[30px]">
+        <div className="relative mx-[61.5px] flex flex-col items-start justify-start gap-1 pt-[23px] md:mx-0 md:flex-row md:gap-[18px] md:py-[30px]">
           <img
-            className="absolute -left-[130px] top-1"
+            className="absolute -left-[90px] -top-3 scale-[40%] md:-left-[130px] md:top-1 md:scale-100"
             src={ArrowButtons}
             alt="Arrow Curved"
           />
-          <button className="flex w-[187px] items-center justify-between rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[24px] py-[14px] font-darker-grotesque text-lg font-medium text-white">
+          <button className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-medium text-white md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
             Schedule a demo
             <svg
               width="16.000000"
@@ -109,7 +182,7 @@ const Header = () => {
             </svg>
           </button>
           <div className="flex max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-            <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[23px] py-[13px] text-left font-darker-grotesque text-lg font-bold leading-[1.5] text-[rgb(3,6,16)]">
+            <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google
               <img src={ArrowRight} alt="" />
@@ -117,24 +190,24 @@ const Header = () => {
           </div>
         </div>
         {/* images */}
-        <div className="absolute left-[124px] top-[449px] h-[406px] w-[calc(100%-124px)]">
+        <div className="left-[124px] top-[449px] flex h-[406px] gap-3 pt-[10px] md:absolute md:w-[calc(100%-124px)] md:scale-100 md:pt-0">
           {/* left */}
-          <div className="absolute left-0 top-[18px]">
+          <div className="left-0 top-[18px] md:absolute">
             <img src={LeftHeader} alt="" />
           </div>
           <img
-            className="absolute left-[351px] top-[132px]"
+            className="absolute left-[351px] top-[132px] hidden md:block"
             src={CenterHeader}
             alt="Scrapbook with travel photos"
           />
           {/* right */}
-          <div className="absolute left-[886px] top-0">
+          <div className="left-[886px] top-0 md:absolute">
             <img src={RightHeader} alt="" />
           </div>
         </div>
         {/* decor */}
         <img
-          className="absolute left-[1179px] top-[149px]"
+          className="absolute bottom-[213px] left-[156px] w-[57px] md:left-[1179px] md:top-[149px] md:w-[114px]"
           src={HeaderSphere}
           alt=""
         />
