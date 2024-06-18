@@ -9,10 +9,18 @@ import ArrowButtons from "../assets/arrow-buttons.svg";
 import CenterHeader from "../assets/center-header.png";
 import LeftHeader from "../assets/header-imgs-left.png";
 import RightHeader from "../assets/header-imgs-right.png";
+import HeaderSphere from "../assets/header-sphere.png";
+
+import Background from "../assets/bg.png";
+
+// TODO: Add gradients to the header
 
 const Header = () => {
   return (
-    <header className="pt-[40px] text-gray-700">
+    <header
+      style={{ backgroundImage: `url(${Background})` }}
+      className="relative h-[938px] pt-[40px] text-gray-700"
+    >
       <div className="container mx-[124px] flex flex-col flex-wrap items-center justify-between p-0 md:flex-row">
         <a className="" href="https://www.vixc.com/" target="_blank">
           <img src={Logo} alt="Logo" />
@@ -109,7 +117,7 @@ const Header = () => {
           </div>
         </div>
         {/* images */}
-        <div className="absolute left-[124px] top-[449px] h-[406px] w-full border">
+        <div className="absolute left-[124px] top-[449px] h-[406px] w-[calc(100%-124px)]">
           {/* left */}
           <div className="absolute left-0 top-[18px]">
             <img src={LeftHeader} alt="" />
@@ -124,6 +132,12 @@ const Header = () => {
             <img src={RightHeader} alt="" />
           </div>
         </div>
+        {/* decor */}
+        <img
+          className="absolute left-[1179px] top-[149px]"
+          src={HeaderSphere}
+          alt=""
+        />
       </div>
     </header>
   );
