@@ -6,6 +6,10 @@ import UnionL from "../assets/union.svg";
 import UnionR from "../assets/union-r.svg";
 import ArrowButtons from "../assets/arrow-buttons.svg";
 
+import CenterHeader from "../assets/center-header.png";
+import LeftHeader from "../assets/header-imgs-left.png";
+import RightHeader from "../assets/header-imgs-right.png";
+
 const Header = () => {
   return (
     <header className="pt-[40px] text-gray-700">
@@ -39,7 +43,7 @@ const Header = () => {
           </h5>
           <img src={UnionR} alt="" />
         </div>
-
+        {/* text */}
         <h1 className="font-space-grotesk relative text-center text-[70px] font-semibold leading-[110%]">
           <span className="bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text text-transparent">
             Transform
@@ -102,6 +106,22 @@ const Header = () => {
               Get started with Google
               <img src={ArrowRight} alt="" />
             </button>
+          </div>
+        </div>
+        {/* images */}
+        <div className="absolute left-[124px] top-[449px] h-[406px] w-full border">
+          {/* left */}
+          <div className="absolute left-0 top-[18px]">
+            <img src={LeftHeader} alt="" />
+          </div>
+          <img
+            className="absolute left-[351px] top-[132px]"
+            src={CenterHeader}
+            alt="Scrapbook with travel photos"
+          />
+          {/* right */}
+          <div className="absolute left-[886px] top-0">
+            <img src={RightHeader} alt="" />
           </div>
         </div>
       </div>
