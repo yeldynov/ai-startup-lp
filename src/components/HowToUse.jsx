@@ -1,5 +1,6 @@
 import Gallery from "../assets/gallery.png";
 import SearchLabels from "../assets/search-labels.png";
+import AIChatbot from "../assets/ai-chatbot.png";
 import Checkmark from "../assets/checkmark-icon.png";
 
 const HowToUse = () => {
@@ -123,6 +124,41 @@ const HowToUse = () => {
             <li className="flex items-center justify-start gap-3">
               <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Intuitive
               organization
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* AI Chatbot */}
+      <div className="mt-[50px] flex flex-col items-center justify-center gap-3 p-0 md:mx-10 md:mt-[90px] md:flex-row md:px-0 lg:flex-row lg:gap-11 xl:ml-[124px] xl:mr-[90px]">
+        <div className="w-full lg:mb-0">
+          <img
+            src={AIChatbot}
+            alt="Gallery"
+            className="px-5 md:h-[400px] md:w-[770px] md:px-0"
+          />
+        </div>
+
+        <div className="w-full px-16 pt-[3px] md:px-0 md:pt-0 lg:w-[580px]">
+          <h2 className="mb-[10px] font-space-grotesk text-xl font-semibold leading-[140%] lg:mb-4 lg:text-[33px]">
+            AI Chatbot: Natural Language Interaction
+          </h2>
+          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
+            Engage in seamless conversation with our AI chatbot, using natural
+            language to execute search commands effortlessly.
+          </p>
+          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-7 lg:text-xl">
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Versatile
+              interaction
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Intuitive
+              flow
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Effortless execution
             </li>
           </ul>
         </div>
