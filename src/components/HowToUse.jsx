@@ -11,7 +11,7 @@ const HowToUse = () => {
         </div>
 
         <div className="w-full px-7 lg:w-[375px] lg:px-5 lg:py-[30px]">
-          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-8 lg:pt-2 lg:text-[33px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-7 lg:pt-2 lg:text-[33px]">
             Manage everything
           </h2>
           <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
@@ -37,10 +37,10 @@ const HowToUse = () => {
 
       <div className="relative mt-[120px] flex h-[345px] flex-col bg-[url('assets/facial-id.png')] bg-center px-5 md:ml-[94px] md:mr-5 md:mt-[90px] md:h-[470px] md:items-center md:justify-center md:px-0">
         <div className="left-[30px] mt-5 w-full rounded-lg bg-white bg-opacity-90 px-5 py-4 md:absolute md:mt-0 lg:w-[390px] lg:py-[30px]">
-          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-8 lg:pt-2 lg:text-[33px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-7 lg:pt-2 lg:text-[33px]">
             Facial identification
           </h2>
-          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
+          <p className="w-full font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] md:w-[90%] lg:mb-0 lg:text-lg">
             Effortlessly upload your photos and let the platform accurately
             identify faces, streamlining organization and enhancing viewing
             experience.
