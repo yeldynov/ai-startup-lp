@@ -34,7 +34,7 @@ const Header = () => {
       className="relative h-[938px] pt-[12px] text-gray-700 md:pt-[40px]"
     >
       {/* navbar */}
-      <div className="container flex flex-wrap items-center justify-between p-0 px-5 md:mx-10 md:flex-row 2xl:mx-[124px]">
+      <div className="container flex flex-wrap items-center justify-between p-0 px-5 md:mx-10 md:flex-row md:px-0 xl:mx-[121px]">
         <a
           className=""
           href="https://www.vixc.com/"
@@ -117,7 +117,7 @@ const Header = () => {
           alt="Scrapbook with travel photos"
         />
         {/* eyebrow */}
-        <div className="mt-[18px] flex items-center justify-center gap-2">
+        <div className="mt-[18px] flex items-center justify-center gap-2 md:mt-0">
           <img src={UnionL} alt="" />
           <h5 className="text-center font-darker-grotesque text-[10px] font-bold leading-[1.5] text-[#030610] md:mt-0 md:text-lg">
             TOP AI PLATFORM
@@ -125,7 +125,7 @@ const Header = () => {
           <img src={UnionR} alt="" />
         </div>
         {/* text */}
-        <h1 className="font-space-grotesk relative pt-[2px] text-center text-[40px] font-semibold leading-[110%] md:pt-0 md:text-[52px] 2xl:text-[70px]">
+        <h1 className="relative pt-[2px] text-center font-space-grotesk text-[40px] font-semibold leading-[110%] md:pt-0 md:text-[52px] xl:text-[70px]">
           <span className="bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text text-transparent">
             Transform
           </span>{" "}
