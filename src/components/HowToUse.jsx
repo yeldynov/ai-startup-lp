@@ -3,30 +3,33 @@ import Checkmark from "../assets/checkmark-icon.png";
 
 const HowToUse = () => {
   return (
-    <section id="how-to-use" className="mt-[43px]">
+    <section id="how-to-use" className="mt-5 lg:mt-[43px]">
       {/* Manage everything */}
-      <div className="flex flex-col items-center justify-center gap-11 p-0 px-5 md:mx-10 md:flex-row md:px-0 lg:flex-row xl:mx-[124px]">
+      <div className="flex flex-col items-center justify-center gap-3 p-0 px-5 md:mx-10 md:flex-row md:px-0 lg:flex-row lg:gap-11 xl:mx-[124px]">
         <div className="w-full lg:mb-0 lg:w-[770px]">
           <img src={Gallery} alt="Gallery" className="h-auto w-full" />
         </div>
 
-        <div className="w-full lg:w-[375px] lg:px-5 lg:py-[30px]">
-          <h2 className="mb-4 font-space-grotesk text-[33px] font-semibold">
+        <div className="w-full px-7 lg:w-[375px] lg:px-5 lg:py-[30px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-4 lg:text-[33px]">
             Manage everything
           </h2>
-          <p className="mb-4 font-darker-grotesque text-lg leading-[1.5] text-[#071a56]">
+          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-4 lg:text-lg">
             Easily organize all your photos in one convenient place for
             effortless access and streamlined management with advanced features.
           </p>
-          <ul className="space-y-3 pt-3 font-space-grotesk text-xl">
+          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-3 lg:text-xl">
             <li className="flex items-center justify-start gap-3">
-              <img src={Checkmark} alt="" /> Convenient centralized access
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Convenient centralized access
             </li>
             <li className="flex items-center justify-start gap-3">
-              <img src={Checkmark} alt="" /> Effortless organization
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Effortless organization
             </li>
             <li className="flex items-center justify-start gap-3">
-              <img src={Checkmark} alt="" /> Simplified management tasks
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Simplified management tasks
             </li>
           </ul>
         </div>
