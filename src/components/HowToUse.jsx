@@ -1,4 +1,5 @@
 import Gallery from "../assets/gallery.png";
+import SearchLabels from "../assets/search-labels.png";
 import Checkmark from "../assets/checkmark-icon.png";
 
 const HowToUse = () => {
@@ -35,6 +36,7 @@ const HowToUse = () => {
         </div>
       </div>
 
+      {/* Facial identification */}
       <div className="relative mt-[120px] flex h-[345px] flex-col bg-[url('assets/facial-id.png')] bg-center px-5 md:ml-[94px] md:mr-5 md:mt-[90px] md:h-[470px] md:items-center md:justify-center md:px-0">
         <div className="left-[30px] mt-5 w-full rounded-lg bg-white bg-opacity-90 px-5 py-4 md:absolute md:mt-0 lg:w-[390px] lg:py-[30px]">
           <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-7 lg:pt-2 lg:text-[33px]">
@@ -57,6 +59,42 @@ const HowToUse = () => {
             <li className="flex items-center justify-start gap-3">
               <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Enhanced
               privacy controls
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Search by Labels */}
+      <div className="mt-[46px] flex flex-col items-center justify-center gap-3 p-0 md:mx-10 md:mt-[90px] md:flex-row md:px-0 lg:flex-row lg:gap-11 xl:mx-[124px]">
+        <div className="w-full lg:mb-0 lg:w-[770px]">
+          <img
+            src={SearchLabels}
+            alt="Gallery"
+            className="px-5 md:h-[350px] md:w-[770px] md:px-0"
+          />
+        </div>
+
+        <div className="w-full px-10 pt-1 md:ml-7 md:pt-0 lg:w-[375px] lg:px-5 lg:py-[30px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-7 lg:pt-2 lg:text-[33px]">
+            Search by labels
+          </h2>
+          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
+            Utilize predefined labels or meticulously create custom tags to
+            facilitate searching for specific images, enhancing search accuracy
+            and efficiency.
+          </p>
+          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-7 lg:text-xl">
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Versatile
+              searching options
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Personalized tagging
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Enhanced
+              search precision
             </li>
           </ul>
         </div>
