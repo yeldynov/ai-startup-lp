@@ -34,7 +34,7 @@ const Header = () => {
       className="relative h-[938px] pt-[12px] text-gray-700 md:pt-[40px]"
     >
       {/* navbar */}
-      <div className="container flex flex-wrap items-center justify-between p-0 px-5 md:mx-10 md:flex-row md:px-0 xl:mx-[121px]">
+      <div className="container flex flex-wrap items-center justify-between p-0 px-5 md:mx-10 md:flex-row md:px-0 xl:mx-[124px]">
         <a
           className=""
           href="https://www.vixc.com/"

@@ -99,6 +99,34 @@ const HowToUse = () => {
           </ul>
         </div>
       </div>
+
+      {/* Grouping images */}
+      <div className="relative mt-[60px] flex h-[400px] flex-col bg-[url('assets/grouping-images.png')] bg-center md:mt-[90px] md:h-[470px] md:items-center md:justify-center">
+        <div className="left-[124px] top-[73px] mx-10 mt-20 rounded-lg bg-white bg-opacity-90 px-3 py-3 md:absolute md:mx-0 md:mt-0 md:px-5 md:py-[30px] lg:w-[360px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-7 lg:pt-2 lg:text-[33px]">
+            Grouping images
+          </h2>
+          <p className="w-full font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
+            Employ sophisticated AI algorithms or manual grouping methods to
+            effortlessly organize your photos into logical categories with
+            precision.
+          </p>
+          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-[30px] lg:text-xl">
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Automated
+              categorization
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
+              Customizable groupings
+            </li>
+            <li className="flex items-center justify-start gap-3">
+              <img className="w-4 lg:w-auto" src={Checkmark} alt="" /> Intuitive
+              organization
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
