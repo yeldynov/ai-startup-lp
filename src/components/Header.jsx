@@ -125,7 +125,7 @@ const Header = () => {
           <img src={UnionR} alt="" />
         </div>
         {/* text */}
-        <h1 className="relative pt-[2px] text-center font-space-grotesk text-[40px] font-semibold leading-[110%] md:pt-0 md:text-[52px] xl:text-[70px]">
+        <h1 className="relative pt-[2px] text-center font-space-grotesk text-[40px] font-semibold leading-[110%] md:pt-0 lg:text-[52px] xl:text-[70px]">
           <span className="bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text text-transparent">
             Transform
           </span>{" "}
@@ -154,7 +154,7 @@ const Header = () => {
           transforming photo search into a delightful experience.
         </p>
         {/* buttons */}
-        <div className="relative mx-[61.5px] flex flex-col items-start justify-start gap-1 pt-[23px] md:mx-0 md:flex-row md:gap-[18px] md:py-[30px]">
+        <div className="relative z-20 mx-[61.5px] flex flex-col items-start justify-start gap-1 pt-[23px] md:mx-0 md:flex-row md:gap-[18px] md:py-[30px]">
           <img
             className="absolute -left-[90px] -top-3 scale-[40%] md:-left-[130px] md:top-1 md:scale-100"
             src={ArrowButtons}

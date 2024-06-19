@@ -11,14 +11,14 @@ const HowToUse = () => {
         </div>
 
         <div className="w-full px-7 lg:w-[375px] lg:px-5 lg:py-[30px]">
-          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-4 lg:text-[33px]">
+          <h2 className="mb-3 font-space-grotesk text-xl font-semibold lg:mb-8 lg:pt-2 lg:text-[33px]">
             Manage everything
           </h2>
-          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-4 lg:text-lg">
+          <p className="font-darker-grotesque text-[15px] leading-[1.5] text-[#071a56] lg:mb-0 lg:text-lg">
             Easily organize all your photos in one convenient place for
             effortless access and streamlined management with advanced features.
           </p>
-          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-3 lg:text-xl">
+          <ul className="space-y-3 pt-4 font-space-grotesk text-[15px] lg:pt-6 lg:text-xl">
             <li className="flex items-center justify-start gap-3">
               <img className="w-4 lg:w-auto" src={Checkmark} alt="" />{" "}
               Convenient centralized access
