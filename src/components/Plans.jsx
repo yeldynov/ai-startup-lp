@@ -6,6 +6,8 @@ import Checkmark from "../assets/checkmark.svg";
 import GoogleBtn from "../assets/google-btn-icon.png";
 import ArrowRight from "../assets/arrow-right.svg";
 
+// TODO: Add shadow and BG
+
 const Plans = () => {
   return (
     <section id="plans" className="mt-[75px] lg:mt-[130px]">
