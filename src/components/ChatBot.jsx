@@ -7,7 +7,7 @@ const ChatBot = () => {
   return (
     <section className="relative mt-[75px] lg:mt-[182px]" id="chatbot ">
       {/* Grouping images */}
-      <div className="flex h-[722px] flex-col bg-[url('assets/ai-section-bg.png')] bg-center md:mt-[90px] md:h-[569px] md:items-center md:justify-center">
+      <div className="flex h-[570px] flex-col bg-[url('assets/ai-section-bg.png')] bg-center md:mt-[90px] md:h-[569px] md:items-center md:justify-center">
         <div className="left-[124px] top-[73px] mx-5 mt-5 py-3 text-white md:absolute md:mx-0 md:mt-[55px]">
           {/* header */}
           <div className="flex flex-col items-center justify-center p-0 md:w-[415px] md:px-0">

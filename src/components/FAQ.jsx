@@ -52,11 +52,11 @@ const FAQ = () => {
   return (
     <section
       id="faq"
-      className="h-[1023px] w-full"
+      className="w-full md:h-[1023px]"
       style={{ backgroundImage: `url(${Background})` }}
     >
       {/* header */}
-      <div className="flex flex-col items-center justify-center p-0 px-5 pt-[130px] md:mx-10 md:px-0">
+      <div className="flex flex-col items-center justify-center p-0 px-5 pt-[65px] md:mx-10 md:px-0 md:pt-[130px]">
         <div className="mt-[18px] flex items-center justify-center gap-2 md:mt-0">
           <img src={UnionL} alt="" />
           <h5 className="text-center font-darker-grotesque text-[10px] font-bold leading-[1.5] text-[#030610] md:mt-0 md:text-lg">
@@ -71,12 +71,12 @@ const FAQ = () => {
           </span>{" "}
           asked questions
         </h2>
-        <p className="mt-[14px] text-center font-darker-grotesque text-[12px] leading-[150%] text-[#081A56] md:mt-[24px] md:w-[480px] md:text-lg">
+        <p className="mt-[14px] text-center font-darker-grotesque text-[15px] leading-[150%] text-[#081A56] md:mt-[24px] md:w-[480px] md:text-lg">
           Everything you need to know about the product and billing.
         </p>
       </div>
       {/* Accordion */}
-      <div className="mx-[345px] mt-10 space-y-5">
+      <div className="mx-5 mt-7 space-y-3 md:mx-[345px] md:mt-10 md:space-y-5">
         {ACCORDION_ITEMS.map((item, index) => (
           <AccordionItem
             key={index}
@@ -105,15 +105,19 @@ const AccordionItem = ({
   return (
     <div
       className={`${
-        activeIndex === index ? "py-[24px]" : "py-[16px]"
-      } group flex flex-col gap-2 rounded-lg border-[0.5px] border-[#a7a7a7] bg-white px-[24px] text-black`}
+        activeIndex === index
+          ? "mb-5 gap-3 py-[15px] md:py-[24px]"
+          : "gap-0 py-[15px] md:py-[16px]"
+      } group flex flex-col rounded-lg border-[0.5px] border-[#a7a7a7] bg-white px-[12px] text-black md:gap-2 md:px-[24px]`}
       tabIndex={index}
     >
       <div
         className="flex cursor-pointer items-center justify-between"
         onClick={() => onItemClick(index)}
       >
-        <span className="pr-2 font-space-grotesk text-xl">{question}</span>
+        <span className="pr-2 font-space-grotesk text-[15px] text-[#030610] md:text-xl">
+          {question}
+        </span>
         {activeIndex === index ? (
           <img src={MinusIcon} alt="Minus Icon" />
         ) : (
@@ -125,7 +129,7 @@ const AccordionItem = ({
           activeIndex === index
             ? "visible max-h-screen opacity-100"
             : "invisible max-h-0 opacity-0"
-        } h-auto items-center pr-16 font-darker-grotesque text-lg text-[#081a56] transition-all`}
+        } h-auto items-center font-darker-grotesque text-[15px] text-[#081a56] transition-all md:pr-16 md:text-lg`}
       >
         {answer}
       </div>
