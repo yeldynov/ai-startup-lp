@@ -20,9 +20,7 @@ const ChatBot = () => {
             </div>
             {/* text */}
             <h2 className="relative ml-8 font-space-grotesk text-[26px] font-semibold leading-[120%] md:ml-0 md:pt-0 md:text-[40px]">
-              <span className="bg-clip-text text-[#21e8fd] text-transparent">
-                AI Chatbot:
-              </span>{" "}
+              <span className="bg-clip-text text-[#21e8fd]">AI Chatbot:</span>{" "}
               Natural Language Interaction
             </h2>
             <p className="mx-8 mt-[14px] font-darker-grotesque text-[15px] leading-[150%] md:mx-0 md:mt-[24px] md:text-lg">

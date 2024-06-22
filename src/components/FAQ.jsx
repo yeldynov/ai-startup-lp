@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 import Background from "../assets/bg.png";
-import Keywords from "../assets/keywords.png";
 import UnionL from "../assets/union.svg";
 import UnionR from "../assets/union-r.svg";
+import Keywords from "../assets/keywords.png";
 import PlusIcon from "../assets/plus.svg";
 import MinusIcon from "../assets/minus.svg";
 

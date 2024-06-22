@@ -4,3 +4,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/index.css or src/global.css */
+.notched-corner {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  clip-path: polygon(87% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+.gradient-background {
+  position: absolute;
+  top: 140px;
+  left: 124px;
+  filter: blur(83.55px);
+  background: linear-gradient(
+    90deg,
+    rgb(68, 255, 154) -0.548%,
+    rgb(68, 176, 255) 22.864%,
+    rgb(139, 68, 255) 48.357%,
+    rgb(255, 102, 68) 73.33%,
+    rgb(235, 255, 112) 99.343%
+  );
+  /* z-index: -1; Ensure the background is behind other elements */
+}
+
+@media screen and (max-width: 768px) {
+  .gradient-background {
+    top: 650px;
+    left: 50%;
+    /* width: 200%;
+    height: 200%; */
+    transform: translateX(-50%) rotate(-90deg); /* Adjust the rotation angle as needed */
+  }
+}
