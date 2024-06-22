@@ -14,7 +14,7 @@
 }
 .gradient-background {
   position: absolute;
-  top: 140px;
+  top: 150px;
   left: 124px;
   filter: blur(83.55px);
   background: linear-gradient(
@@ -25,15 +25,12 @@
     rgb(255, 102, 68) 73.33%,
     rgb(235, 255, 112) 99.343%
   );
-  /* z-index: -1; Ensure the background is behind other elements */
 }
 
 @media screen and (max-width: 768px) {
   .gradient-background {
     top: 650px;
     left: 50%;
-    /* width: 200%;
-    height: 200%; */
     transform: translateX(-50%) rotate(-90deg); /* Adjust the rotation angle as needed */
   }
 }

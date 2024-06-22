@@ -38,7 +38,7 @@ const KeyFeatures = () => {
       </div>
 
       <div className="relative z-20 flex overflow-hidden px-[40px] py-12 md:px-[124px]">
-        <div className="gradient-background h-[150px] w-[1300px] md:h-[164.5px] md:w-[1192px]"></div>
+        <div className="gradient-background h-[150px] w-[1300px] md:h-[110px] md:w-[1192px]"></div>
         <div className="mx-auto -mt-2 grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-4">
           <Card
             icon={<img src={Robot} />}

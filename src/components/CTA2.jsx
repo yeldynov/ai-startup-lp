@@ -5,11 +5,11 @@ import ArrowRight from "../assets/arrow-right.svg";
 
 const CTA2 = () => {
   return (
-    <section className="mt-[80px] md:mt-[140px]" id="cta2">
-      <div className="relative mt-[60px] flex h-[560px] flex-col items-center bg-[url('assets/CTA2.png')] md:mt-[90px] md:h-[600px] md:justify-center md:bg-center">
-        <div className="left-[124px] top-[103px] mt-[105px] h-[347px] w-[291px] rounded-md bg-white bg-opacity-90 p-[10px] md:absolute md:mx-0 md:mt-0 md:rounded-lg md:p-10 lg:h-[396px] lg:w-[544px]">
+    <section className="mt-[62px] md:mt-[140px]" id="cta2">
+      <div className="relative mt-[60px] flex h-[560px] flex-col items-center bg-[url('assets/CTA2.png')] bg-bottom md:mt-[90px] md:h-[600px] md:justify-center md:bg-center">
+        <div className="left-[124px] top-[103px] mt-[105px] h-[344px] w-[315px] rounded-md bg-white bg-opacity-90 p-[10px] md:absolute md:mx-0 md:mt-0 md:rounded-lg md:p-10 lg:h-[396px] lg:w-[544px]">
           {/* header */}
-          <div className="flex flex-col items-center justify-center pt-1 md:pt-0">
+          <div className="flex flex-col items-center justify-center pt-2 md:pt-0">
             <div className="flex items-center justify-center gap-2 md:mr-6 md:mt-0">
               <img src={UnionL} alt="" />
               <h5 className="text-center font-darker-grotesque text-[10px] font-bold leading-[1.5] text-[#030610] md:mt-0 md:text-lg">
@@ -24,7 +24,7 @@ const CTA2 = () => {
               </span>{" "}
               to manage your pictures
             </h2>
-            <p className="ml-1 mt-[10px] font-darker-grotesque text-[15px] leading-[150%] text-[#081A56] md:ml-0 md:mt-[22px] md:text-lg">
+            <p className="ml-1 mt-[13px] font-darker-grotesque text-[15px] leading-[150%] text-[#081A56] md:ml-0 md:mt-[22px] md:text-lg">
               Discover an effortless solution for organizing your extensive
               photo collection with ease. Our platform offers a simple and
               intuitive way to manage and enjoy your cherished pictures
@@ -32,8 +32,8 @@ const CTA2 = () => {
             </p>
           </div>
 
-          <div className="mt-5 flex gap-4 px-1 md:mt-7 md:px-0">
-            <button className="flex h-[45px] w-[161px] items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
+          <div className="mt-5 flex flex-col gap-4 px-1 md:mt-7 md:flex-row md:px-0">
+            <button className="flex h-[45px] w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
               Schedule a demo
               <svg
                 width="16.000000"
