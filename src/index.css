@@ -27,6 +27,23 @@
   );
 }
 
+.gradient-footer {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(79.73px);
+  background: linear-gradient(
+    90deg,
+    rgb(68, 255, 154) -0.548%,
+    rgb(68, 176, 255) 22.864%,
+    rgb(139, 68, 255) 48.357%,
+    rgb(255, 102, 68) 73.33%,
+    rgb(235, 255, 112) 99.343%
+  );
+  opacity: 0.34;
+}
+
 @media screen and (max-width: 768px) {
   .gradient-background {
     top: 650px;
