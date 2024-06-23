@@ -11,7 +11,7 @@ import Arrow from "../assets/features-arrow.svg";
 const KeyFeatures = () => {
   return (
     <section
-      id="faq"
+      id="features"
       className="w-full"
       style={{ backgroundImage: `url(${Background})` }}
     >

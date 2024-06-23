@@ -9,8 +9,14 @@ const Footer = () => {
       <div className="relative z-20 mt-[60px] flex w-full flex-col justify-between px-5 md:flex-row md:items-center md:px-0">
         <div className="gradient-footer h-[150px] w-[1300px]"></div>
         {/* logo-social */}
-        <div className="flex w-[231px] flex-col gap-5 md:w-[294px]">
-          <img className="w-[140px] md:w-[139px]" src={Logo} alt="Main logo" />
+        <div className="z-20 flex w-[231px] flex-col gap-5 md:w-[294px]">
+          <a href="/">
+            <img
+              className="w-[140px] md:w-[139px]"
+              src={Logo}
+              alt="Main logo"
+            />
+          </a>
           <p className="-mt-3 font-darker-grotesque text-[15px] text-[#081a56] md:-mt-0 md:text-lg">
             "Effortlessly organize and find your photos with VIXC – your
             AI-powered solution!"
@@ -20,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         {/* links */}
-        <div className="mt-8 flex gap-[133px] md:-ml-10 md:gap-[139px]">
+        <div className="z-20 mt-8 flex gap-[133px] md:-ml-10 md:gap-[139px]">
           {/* left */}
           <div className="">
             <h5 className="font-space-grotesk text-[15px] leading-[150%] text-[#030610] md:text-xl">
@@ -28,38 +34,38 @@ const Footer = () => {
             </h5>
             <div className="flex flex-col md:pt-2">
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#home"
               >
                 Home
               </a>
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#features"
               >
                 Features
               </a>
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#how-to-use"
               >
                 How to use
               </a>
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#plans"
               >
                 Plans
               </a>
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#chatbot"
               >
                 Chatbot
               </a>
               <a
-                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
-                href="#"
+                className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
+                href="#faq"
               >
                 FAQ
               </a>
@@ -74,13 +80,13 @@ const Footer = () => {
               </h5>
               <div className="flex flex-col">
                 <a
-                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
+                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
                   href="#"
                 >
                   Privacy Policy
                 </a>
                 <a
-                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
+                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
                   href="#"
                 >
                   Terms & Conditions
@@ -94,7 +100,7 @@ const Footer = () => {
               </h5>
               <div className="flex flex-col">
                 <a
-                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] md:text-xl"
+                  className="font-darker-grotesque text-[16px] font-semibold leading-[150%] text-[#081a56] hover:text-black hover:underline md:text-xl"
                   href="mailto:support@vixc.com"
                 >
                   support@vixc.com
@@ -116,7 +122,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="flex h-[33px] w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white md:h-[43px] md:justify-center md:px-[24px] md:py-[14px] md:text-lg"
+              className="z-20 flex h-[33px] w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white hover:opacity-75 md:h-[43px] md:justify-center md:px-[24px] md:py-[14px] md:text-lg"
             >
               Subscribe
               <svg

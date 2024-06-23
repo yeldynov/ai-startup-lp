@@ -5,7 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* src/index.css or src/global.css */
+html {
+  scroll-behavior: smooth;
+}
+
 .notched-corner {
   position: relative;
   overflow: hidden;

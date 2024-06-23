@@ -30,6 +30,7 @@ const Header = () => {
 
   return (
     <header
+      id="home"
       style={{ backgroundImage: `url(${Background})` }}
       className="relative h-[938px] pt-[12px] text-gray-700 md:pt-[40px]"
     >
@@ -46,19 +47,22 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden justify-between gap-[42px] font-darker-grotesque text-xl font-semibold leading-7 md:flex">
-          <a className="hover:text-gray-900" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="#features">
             Features
           </a>
-          <a className="hover:text-gray-900" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="#how-to-use">
             How to use
           </a>
-          <a className="hover:text-gray-900" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="#plans">
             Plans
           </a>
-          <a className="hover:text-gray-900" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="#chatbot">
             Chatbot
           </a>
-          <a className="hover:text-gray-900" href="#">
+          <a
+            className="hover:text-gray-900 hover:underline hover:underline-offset-2"
+            href="#faq"
+          >
             FAQ
           </a>
         </nav>
@@ -83,19 +87,39 @@ const Header = () => {
               <button className="mb-8 self-end" onClick={toggleMenu}>
                 <FaTimes className="text-2xl" />
               </button>
-              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+              <a
+                className="hover:text-gray-900"
+                href="#features"
+                onClick={toggleMenu}
+              >
                 Features
               </a>
-              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+              <a
+                className="hover:text-gray-900"
+                href="#how-to-use"
+                onClick={toggleMenu}
+              >
                 How to use
               </a>
-              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+              <a
+                className="hover:text-gray-900"
+                href="#plans"
+                onClick={toggleMenu}
+              >
                 Plans
               </a>
-              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+              <a
+                className="hover:text-gray-900"
+                href="#chatbot"
+                onClick={toggleMenu}
+              >
                 Chatbot
               </a>
-              <a className="hover:text-gray-900" href="#" onClick={toggleMenu}>
+              <a
+                className="hover:text-gray-900"
+                href="#faq"
+                onClick={toggleMenu}
+              >
                 FAQ
               </a>
             </nav>
@@ -103,7 +127,7 @@ const Header = () => {
         )}
 
         <div className="flex h-[33px] w-[109px] max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg md:mr-[88px] md:h-[43px] md:w-[158px]">
-          <button className="flex flex-1 items-center justify-center rounded-lg bg-white text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:justify-between md:px-5 md:py-[7px] md:text-lg">
+          <button className="flex flex-1 items-center justify-center rounded-lg bg-white text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:justify-between md:px-5 md:py-[7px] md:text-lg">
             Start free trial
             <img src={ArrowRight} alt="Start free trial" />
           </button>
@@ -160,7 +184,7 @@ const Header = () => {
             src={ArrowButtons}
             alt="Arrow Curved"
           />
-          <button className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-medium text-white md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
+          <button className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-medium text-white hover:brightness-150 md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
             Schedule a demo
             <svg
               width="16.000000"
@@ -182,7 +206,7 @@ const Header = () => {
             </svg>
           </button>
           <div className="flex max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-            <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[23px] md:py-[13px] md:text-lg">
+            <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google
               <img src={ArrowRight} alt="" />

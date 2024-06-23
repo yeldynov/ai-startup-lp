@@ -2,6 +2,7 @@ import UnionL from "../assets/union.svg";
 import UnionR from "../assets/union-r.svg";
 import Crown from "../assets/crown.svg";
 import Checkmark from "../assets/checkmark.svg";
+import Background from "../assets/bg.png";
 
 import GoogleBtn from "../assets/google-btn-icon.png";
 import ArrowRight from "../assets/arrow-right.svg";
@@ -10,7 +11,11 @@ import ArrowRight from "../assets/arrow-right.svg";
 
 const Plans = () => {
   return (
-    <section id="plans" className="mt-[75px] lg:mt-[130px]">
+    <section
+      id="plans"
+      style={{ backgroundImage: `url(${Background})` }}
+      className="mt-[75px] lg:mt-[130px]"
+    >
       {/* header */}
       <div className="flex flex-col items-center justify-center p-0 px-5 md:mx-10 md:px-0">
         <div className="mt-[18px] flex items-center justify-center gap-2 md:mt-0">
@@ -33,9 +38,11 @@ const Plans = () => {
         </p>
       </div>
       {/* Cards */}
-      <div className="mt-7 flex flex-col gap-4 p-0 px-5 md:mt-10 md:flex-row md:gap-5 md:px-[124px]">
+      <div className="relative mt-7 flex flex-col items-center justify-center gap-4 p-0 px-5 md:mt-10 md:flex-row md:gap-5 md:px-[124px]">
+        <div className="gradient-background h-[150px] w-[1300px]"></div>
+
         {/* card */}
-        <div className="flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
+        <div className="z-20 flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
           <div className="flex w-full flex-col items-start justify-start p-0">
             {/* top */}
             <div className="-mt-3 flex w-full flex-col items-start justify-start gap-3 md:-mt-1">
@@ -135,7 +142,7 @@ const Plans = () => {
           </div>
           {/* google btn */}
           <div className="mt-[30px] flex w-full max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[23px] md:py-[13px] md:text-lg">
+            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google
               <img src={ArrowRight} alt="" />
@@ -143,7 +150,7 @@ const Plans = () => {
           </div>
         </div>
         {/* card */}
-        <div className="flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
+        <div className="z-20 flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
           <div className="flex w-full flex-col items-start justify-start p-0">
             {/* top */}
             <div className="-mt-3 flex w-full flex-col items-start justify-start gap-3 md:-mt-1">
@@ -243,7 +250,7 @@ const Plans = () => {
           </div>
           {/* google btn */}
           <div className="mt-[30px] flex w-full max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[23px] md:py-[13px] md:text-lg">
+            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google
               <img src={ArrowRight} alt="" />
@@ -251,7 +258,7 @@ const Plans = () => {
           </div>
         </div>
         {/* card */}
-        <div className="flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
+        <div className="z-20 flex h-[476px] flex-col items-start justify-start rounded-[4px] border-[0.5px] border-[#a7a7a7] bg-white p-[31px] md:h-[632px] md:w-[384px] md:rounded-lg">
           <div className="flex w-full flex-col items-start justify-start p-0">
             {/* top */}
             <div className="-mt-3 flex w-full flex-col items-start justify-start gap-3 md:-mt-1">
@@ -351,7 +358,7 @@ const Plans = () => {
           </div>
           {/* google btn */}
           <div className="mt-[30px] flex w-full max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[23px] md:py-[13px] md:text-lg">
+            <button className="flex flex-1 items-center justify-center gap-1 rounded-lg bg-white px-[13px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google
               <img src={ArrowRight} alt="" />

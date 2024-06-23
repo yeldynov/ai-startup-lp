@@ -46,7 +46,7 @@ const CTA1 = () => {
           </ul>
 
           <div className="mt-5 flex gap-8 px-1 md:mt-7 md:px-0">
-            <button className="flex h-[45px] w-[161px] items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
+            <button className="flex h-[45px] w-[161px] items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white hover:opacity-75 md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
               Schedule a demo
               <svg
                 width="16.000000"

@@ -33,7 +33,7 @@ const CTA2 = () => {
           </div>
 
           <div className="mt-5 flex flex-col gap-4 px-1 md:mt-7 md:flex-row md:px-0">
-            <button className="flex h-[45px] w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
+            <button className="flex h-[45px] w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#8D1EA2] to-[#090EDB] px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-white hover:opacity-75 md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
               Schedule a demo
               <svg
                 width="16.000000"
@@ -55,7 +55,7 @@ const CTA2 = () => {
               </svg>
             </button>
             <div className="flex max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
-              <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] md:px-[24px] md:py-[13px] md:text-lg">
+              <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[24px] md:py-[13px] md:text-lg">
                 <img src={GoogleBtn} alt="" />
                 Get started with Google
                 <img src={ArrowRight} alt="" />

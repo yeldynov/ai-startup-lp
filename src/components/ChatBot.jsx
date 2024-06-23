@@ -5,7 +5,7 @@ import Arrow from "../assets/arrow-ai.png";
 
 const ChatBot = () => {
   return (
-    <section className="relative mt-[75px] lg:mt-[182px]" id="chatbot ">
+    <section className="relative mt-[75px] lg:mt-[182px]" id="chatbot">
       {/* Grouping images */}
       <div className="flex h-[570px] flex-col bg-[url('assets/ai-section-bg.png')] bg-center md:mt-[90px] md:h-[569px] md:items-center md:justify-center">
         <div className="left-[124px] top-[73px] mx-5 mt-5 py-3 text-white md:absolute md:mx-0 md:mt-[55px]">
@@ -29,7 +29,7 @@ const ChatBot = () => {
             </p>
           </div>{" "}
           <div className="mt-5 flex gap-8 pl-8 md:mt-7 md:pl-0">
-            <button className="flex h-[45px] w-[161px] items-center justify-center rounded-lg bg-white px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-[#030610] md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
+            <button className="flex h-[45px] w-[161px] items-center justify-center rounded-lg bg-white px-[15px] py-[12px] font-darker-grotesque text-sm font-bold text-[#030610] hover:opacity-75 md:h-[57px] md:w-[187px] md:justify-between md:px-[24px] md:py-[14px] md:text-lg">
               Schedule a demo
               <svg
                 width="16.000000"
