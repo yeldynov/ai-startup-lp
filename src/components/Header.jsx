@@ -82,9 +82,9 @@ const Header = () => {
 
         {/* Mobile Navigation with Backdrop */}
         {isOpen && (
-          <div className="fixed left-0 top-0 z-40 flex h-full w-full items-center justify-center bg-black bg-opacity-50 md:hidden">
+          <div className="fixed top-0 left-0 z-40 flex items-center justify-center w-full h-full bg-black bg-opacity-50 md:hidden">
             <nav className="flex h-full w-full flex-col items-center gap-[42px] bg-white p-8 font-darker-grotesque text-xl font-semibold leading-7">
-              <button className="mb-8 self-end" onClick={toggleMenu}>
+              <button className="self-end mb-8" onClick={toggleMenu}>
                 <FaTimes className="text-2xl" />
               </button>
               <a
@@ -127,10 +127,14 @@ const Header = () => {
         )}
 
         <div className="flex h-[33px] w-[109px] max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg md:mr-[88px] md:h-[43px] md:w-[158px]">
-          <button className="flex flex-1 items-center justify-center rounded-lg bg-white text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:justify-between md:px-5 md:py-[7px] md:text-lg">
+          <a
+            href="https://dashboard-ai-pied.vercel.app/"
+            target="_blank"
+            className="flex flex-1 items-center justify-center rounded-lg bg-white text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:justify-between md:px-5 md:py-[7px] md:text-lg"
+          >
             Start free trial
             <img src={ArrowRight} alt="Start free trial" />
-          </button>
+          </a>
         </div>
       </div>
       {/* HERO */}
@@ -150,14 +154,14 @@ const Header = () => {
         </div>
         {/* text */}
         <h1 className="relative pt-[2px] text-center font-space-grotesk text-[40px] font-semibold leading-[110%] md:pt-0 lg:text-[52px] xl:text-[70px]">
-          <span className="bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text text-transparent">
+          <span className="text-transparent bg-gradient-to-r from-purple-600 to-blue-900 bg-clip-text">
             Transform
           </span>{" "}
           your photo search with{" "}
           <span className="relative inline-block">
             AI precision
             <svg
-              className="absolute -bottom-4 left-0 h-8 w-full"
+              className="absolute left-0 w-full h-8 -bottom-4"
               viewBox="0 0 100 10"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
@@ -205,7 +209,7 @@ const Header = () => {
               />
             </svg>
           </button>
-          <div className="flex max-w-sm rounded-lg bg-gradient-to-tr from-pink-600 to-blue-600 p-px shadow-lg">
+          <div className="flex max-w-sm p-px rounded-lg shadow-lg bg-gradient-to-tr from-pink-600 to-blue-600">
             <button className="flex flex-1 items-center justify-between gap-1 rounded-lg bg-white px-[10px] py-3 text-left font-darker-grotesque text-sm font-bold leading-[1.5] text-[rgb(3,6,16)] hover:opacity-75 md:px-[23px] md:py-[13px] md:text-lg">
               <img src={GoogleBtn} alt="" />
               Get started with Google

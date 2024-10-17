@@ -12,15 +12,17 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="bg-[#f5f7fb]">
-      <Header />
-      <HowToUse />
-      <Plans />
-      <ChatBot />
-      <FAQ />
-      <CTA1 />
-      <KeyFeatures />
-      <CTA2 />
-      <Footer />
+      <div className="container mx-auto max-w-screen-2xl">
+        <Header />
+        <HowToUse />
+        <Plans />
+        <ChatBot />
+        <FAQ />
+        <CTA1 />
+        <KeyFeatures />
+        <CTA2 />
+        <Footer />
+      </div>
     </div>
   );
 }
